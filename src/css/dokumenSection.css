@@ -1,0 +1,84 @@
+.docs-section {
+  background: linear-gradient(160deg, #e0f2fe, #f0f9ff);
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.docs-container {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+.docs-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #2563eb, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.docs-container .intro {
+  color: #475569;
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.docs-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.doc-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 18px;
+  padding: 25px 20px;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.08);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(37, 99, 235, 0.15);
+  transition: all 0.35s ease;
+}
+
+.doc-card:hover {
+  transform: translateY(-6px);
+  background: linear-gradient(160deg, #f0f9ff, #dbeafe);
+  box-shadow: 0 15px 25px rgba(37, 99, 235, 0.12);
+}
+
+.doc-card .icon {
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #2563eb;
+}
+
+.doc-card h3 {
+  color: #1e3a8a;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.doc-card p {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.closing {
+  margin-top: 3rem;
+  font-size: 1rem;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.next {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #1d4ed8;
+  font-weight: 600;
+}

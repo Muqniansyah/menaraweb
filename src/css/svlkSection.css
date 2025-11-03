@@ -1,0 +1,108 @@
+/* ===== SVLK Section ===== */
+.svlk-section {
+  background: linear-gradient(180deg, #eaf2ff 0%, #f8fbff 100%);
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.svlk-container {
+  max-width: 950px;
+  width: 100%;
+  text-align: center;
+  color: #1e293b;
+}
+
+/* ===== Title ===== */
+.svlk-container h2 {
+  font-size: 2.2rem;
+  background: linear-gradient(90deg, #2563eb, #0ea5e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.svlk-intro {
+  font-size: 1.05rem;
+  color: #475569;
+  max-width: 720px;
+  margin: 0 auto 3rem;
+  line-height: 1.7;
+}
+
+/* ===== Cards Layout ===== */
+.svlk-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  margin-bottom: 3rem;
+}
+
+.svlk-card {
+  background: linear-gradient(145deg, #ffffff 0%, #e0f2fe 100%);
+  border-radius: 18px;
+  padding: 35px 25px;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.08),
+    inset 0 0 8px rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  transition: all 0.35s ease;
+  backdrop-filter: blur(10px);
+}
+
+.svlk-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(37, 99, 235, 0.15);
+  background: linear-gradient(145deg, #eff6ff 0%, #dbeafe 100%);
+}
+
+/* ===== Icon & Text ===== */
+.svlk-icon {
+  font-size: 2.4rem;
+  display: block;
+  margin-bottom: 10px;
+  color: #2563eb;
+  filter: drop-shadow(0 3px 4px rgba(37, 99, 235, 0.25));
+}
+
+.svlk-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin-bottom: 8px;
+}
+
+.svlk-card p {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.5;
+}
+
+/* ===== Closing Text ===== */
+.svlk-closing {
+  font-size: 1rem;
+  color: #334155;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.svlk-next {
+  font-size: 1rem;
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .svlk-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .svlk-intro {
+    font-size: 1rem;
+  }
+
+  .svlk-card {
+    padding: 25px 20px;
+  }
+}

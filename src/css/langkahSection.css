@@ -1,0 +1,139 @@
+/* ===== Langkah Section ===== */
+.langkah-section {
+  background: #f8fbff;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  color: #1e293b;
+}
+
+.langkah-container {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+/* ===== Title & Intro ===== */
+.langkah-container h2 {
+  font-size: 2.2rem;
+  background: linear-gradient(90deg, #2563eb, #0ea5e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.langkah-intro {
+  font-size: 1.05rem;
+  color: #475569;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  line-height: 1.7;
+}
+
+/* ===== Steps (Timeline Style) ===== */
+.langkah-steps {
+  position: relative;
+  margin: 0 auto 4rem;
+  max-width: 750px;
+  padding-left: 20px;
+  border-left: 3px solid #2563eb;
+}
+
+.langkah-step {
+  position: relative;
+  background: white;
+  margin-bottom: 1.8rem;
+  padding: 1.2rem 1.5rem 1.2rem 3.5rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.08);
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.langkah-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.15);
+}
+
+.step-icon {
+  position: absolute;
+  left: -1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg, #2563eb, #38bdf8);
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
+}
+
+.langkah-step p {
+  margin: 0;
+  color: #334155;
+  line-height: 1.6;
+  font-size: 0.97rem;
+}
+
+/* ===== CTA Box ===== */
+.langkah-cta {
+  background: linear-gradient(180deg, #2563eb, #1e40af);
+  color: white;
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+  text-align: center;
+}
+
+.langkah-cta h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.langkah-cta p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 0.8rem;
+}
+
+.cta-contact a {
+  color: #fbbf24;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.cta-contact a:hover {
+  color: #fff;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .langkah-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .langkah-intro {
+    font-size: 1rem;
+  }
+
+  .langkah-step {
+    padding: 1rem 1rem 1rem 3rem;
+  }
+
+  .step-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+    left: -1rem;
+  }
+
+  .langkah-cta {
+    padding: 2rem 1.5rem;
+  }
+}

@@ -16,6 +16,10 @@ Dalam perdagangan internasional, legalitas ekspor kayu menjadi faktor utama untu
 - tagline :
 #EKSPORKAYULEGAL
 
+
+
+
+
 3. buat web dan kompress gambar + alt gambar
 
 4. web responsif
