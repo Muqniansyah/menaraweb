@@ -1,84 +1,190 @@
+/* ===== Dokumen Section ===== */
 .docs-section {
-  background: linear-gradient(160deg, #e0f2fe, #f0f9ff);
-  padding: 80px 20px;
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  padding: 6rem 1.5rem;
   display: flex;
   justify-content: center;
+  color: #1e293b;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background dekoratif lembut */
+.docs-section::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, #dbeafe 0%, transparent 70%);
+  opacity: 0.6;
+  border-radius: 50%;
+  filter: blur(40px);
+}
+.docs-section::after {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #fef3c7 0%, transparent 70%);
+  opacity: 0.6;
+  border-radius: 50%;
+  filter: blur(60px);
 }
 
 .docs-container {
-  max-width: 900px;
+  max-width: 1200px;
   width: 100%;
-  text-align: center;
+  animation: fadeIn 0.8s ease-out;
+  position: relative;
+  z-index: 2;
 }
 
+/* ===== Judul & Intro ===== */
 .docs-container h2 {
-  font-size: 2rem;
+  font-size: 2.3rem;
   margin-bottom: 1rem;
-  background: linear-gradient(90deg, #2563eb, #06b6d4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 800;
+  color: #0f172a;
+  text-align: center;
+  font-weight: 700;
 }
 
-.docs-container .intro {
+.docs-text .intro {
+  font-size: 1.1rem;
   color: #475569;
-  font-size: 1rem;
+  text-align: center;
   margin-bottom: 2.5rem;
-  line-height: 1.6;
+  line-height: 1.8;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* ===== Layout ===== */
+.docs-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+/* ===== Kartu Dokumen ===== */
 .docs-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  flex: 1;
 }
 
 .doc-card {
-  background: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(145deg, #f1f5f9, #ffffff);
   border-radius: 18px;
-  padding: 25px 20px;
-  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.08);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(37, 99, 235, 0.15);
-  transition: all 0.35s ease;
+  padding: 1.5rem;
+  box-shadow: 8px 8px 16px #cbd5e1, -8px -8px 16px #ffffff;
+  transition: all 0.4s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  cursor: pointer;
 }
 
 .doc-card:hover {
-  transform: translateY(-6px);
-  background: linear-gradient(160deg, #f0f9ff, #dbeafe);
-  box-shadow: 0 15px 25px rgba(37, 99, 235, 0.12);
+  transform: translateY(-8px) rotateX(4deg) rotateY(-3deg);
+  box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.12),
+    -8px -8px 18px rgba(255, 255, 255, 0.7);
+  background: linear-gradient(145deg, #e0f2fe, #ffffff);
 }
 
-.doc-card .icon {
-  display: inline-block;
+.icon {
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
   color: #2563eb;
+  transform: translateZ(20px);
 }
 
 .doc-card h3 {
-  color: #1e3a8a;
-  font-size: 1.1rem;
-  margin-bottom: 8px;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.4rem;
+  transform: translateZ(15px);
 }
 
 .doc-card p {
   color: #475569;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-.closing {
-  margin-top: 3rem;
   font-size: 1rem;
-  color: #334155;
   line-height: 1.6;
+  transform: translateZ(10px);
 }
 
-.next {
-  margin-top: 1rem;
-  font-size: 1rem;
-  color: #1d4ed8;
-  font-weight: 600;
+/* ===== Kolom Gambar ===== */
+.docs-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 280px;
+}
+
+.docs-image img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.docs-image img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Penutup ===== */
+.closing {
+  margin-top: 2.5rem;
+  color: #475569;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* ===== Animasi ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Responsif ===== */
+@media (max-width: 900px) {
+  .docs-image {
+    order: -1; /* biar gambar di atas teks pas tampilan mobile */
+    margin-bottom: 2rem;
+  }
+
+  .docs-image img {
+    max-width: 90%;
+  }
+
+  .docs-content {
+    flex-direction: column; /* sebelumnya column-reverse */
+    align-items: center;
+    text-align: center;
+  }
+
+  .docs-list {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .docs-container h2 {
+    font-size: 1.8rem;
+  }
 }

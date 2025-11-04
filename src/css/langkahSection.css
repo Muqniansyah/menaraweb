@@ -1,139 +1,132 @@
-/* ===== Langkah Section ===== */
+/* === LANGKAH SECTION === */
 .langkah-section {
-  background: #f8fbff;
-  padding: 100px 20px;
-  display: flex;
-  justify-content: center;
-  color: #1e293b;
+  background: linear-gradient(180deg, #0ea5e9 0%, #ef4444 100%);
+  color: #fff;
+  padding: 5rem 1.5rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .langkah-container {
-  max-width: 900px;
-  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
-/* ===== Title & Intro ===== */
-.langkah-container h2 {
-  font-size: 2.2rem;
-  background: linear-gradient(90deg, #2563eb, #0ea5e9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 800;
+/* Glow background untuk efek lembut */
+.langkah-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+      circle at 30% 20%,
+      rgba(255, 255, 255, 0.2),
+      transparent 70%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(255, 255, 255, 0.15),
+      transparent 70%
+    );
+  z-index: 1;
+}
+
+.langkah-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
   margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .langkah-intro {
-  font-size: 1.05rem;
-  color: #475569;
+  font-size: 1.1rem;
   max-width: 700px;
   margin: 0 auto 3rem;
-  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
 }
 
-/* ===== Steps (Timeline Style) ===== */
+/* === STEPS === */
 .langkah-steps {
-  position: relative;
-  margin: 0 auto 4rem;
-  max-width: 750px;
-  padding-left: 20px;
-  border-left: 3px solid #2563eb;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.8rem;
+  justify-content: center;
 }
 
 .langkah-step {
-  position: relative;
-  background: white;
-  margin-bottom: 1.8rem;
-  padding: 1.2rem 1.5rem 1.2rem 3.5rem;
-  border-radius: 14px;
-  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.08);
-  text-align: left;
-  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 2rem 1.2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.35s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }
 
 .langkah-step:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.15);
+  transform: translateY(-10px) rotateX(4deg);
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
 }
 
 .step-icon {
-  position: absolute;
-  left: -1.2rem;
-  top: 50%;
-  transform: translateY(-50%);
-  background: linear-gradient(135deg, #2563eb, #38bdf8);
-  color: white;
-  font-size: 1.2rem;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-.langkah-step p {
-  margin: 0;
-  color: #334155;
-  line-height: 1.6;
-  font-size: 0.97rem;
-}
-
-/* ===== CTA Box ===== */
+/* === CTA === */
 .langkah-cta {
-  background: linear-gradient(180deg, #2563eb, #1e40af);
-  color: white;
-  padding: 2.5rem 2rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
-  text-align: center;
+  margin-top: 4rem;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 2.5rem 1.8rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.35s ease;
+}
+
+.langkah-cta:hover {
+  transform: translateY(-8px);
 }
 
 .langkah-cta h3 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
-}
-
-.langkah-cta p {
-  font-size: 1rem;
-  line-height: 1.7;
-  margin-bottom: 0.8rem;
-}
-
-.cta-contact a {
-  color: #fbbf24;
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.cta-contact a:hover {
   color: #fff;
 }
 
-/* ===== Responsive ===== */
+.langkah-cta p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+}
+
+.cta-contact a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.cta-contact a:hover {
+  color: #facc15;
+}
+
+/* === RESPONSIVE === */
 @media (max-width: 768px) {
-  .langkah-container h2 {
-    font-size: 1.8rem;
+  .langkah-section {
+    padding: 4rem 1rem;
   }
 
-  .langkah-intro {
-    font-size: 1rem;
+  .langkah-section h2 {
+    font-size: 1.6rem;
   }
 
   .langkah-step {
-    padding: 1rem 1rem 1rem 3rem;
-  }
-
-  .step-icon {
-    width: 30px;
-    height: 30px;
-    font-size: 1rem;
-    left: -1rem;
-  }
-
-  .langkah-cta {
-    padding: 2rem 1.5rem;
+    padding: 1.6rem 1rem;
   }
 }

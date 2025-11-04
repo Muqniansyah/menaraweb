@@ -1,108 +1,144 @@
 /* ===== SVLK Section ===== */
 .svlk-section {
-  background: linear-gradient(180deg, #eaf2ff 0%, #f8fbff 100%);
-  padding: 100px 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
+  padding: 6rem 1.5rem;
   display: flex;
   justify-content: center;
+  color: #1e293b;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background lembut seperti Dokumen Section */
+.svlk-section::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  right: -100px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, #dbeafe 0%, transparent 70%);
+  opacity: 0.6;
+  border-radius: 50%;
+  filter: blur(40px);
+}
+
+.svlk-section::after {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: -120px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #bbf7d0 0%, transparent 70%);
+  opacity: 0.6;
+  border-radius: 50%;
+  filter: blur(60px);
 }
 
 .svlk-container {
-  max-width: 950px;
+  max-width: 1200px;
   width: 100%;
-  text-align: center;
-  color: #1e293b;
+  position: relative;
+  z-index: 2;
+  animation: fadeIn 0.8s ease-out;
 }
 
-/* ===== Title ===== */
+/* ===== Judul & Intro ===== */
 .svlk-container h2 {
-  font-size: 2.2rem;
-  background: linear-gradient(90deg, #2563eb, #0ea5e9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 800;
+  font-size: 2.3rem;
   margin-bottom: 1rem;
+  color: #0f172a;
+  text-align: center;
+  font-weight: 700;
 }
 
 .svlk-intro {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   color: #475569;
-  max-width: 720px;
-  margin: 0 auto 3rem;
-  line-height: 1.7;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* ===== Cards Layout ===== */
+/* ===== Kartu-Kartu SVLK ===== */
 .svlk-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 30px;
-  margin-bottom: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .svlk-card {
-  background: linear-gradient(145deg, #ffffff 0%, #e0f2fe 100%);
+  background: linear-gradient(145deg, #f1f5f9, #ffffff);
   border-radius: 18px;
-  padding: 35px 25px;
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.08),
-    inset 0 0 8px rgba(255, 255, 255, 0.4);
-  border: 1px solid rgba(37, 99, 235, 0.12);
-  transition: all 0.35s ease;
-  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  box-shadow: 8px 8px 16px #cbd5e1, -8px -8px 16px #ffffff;
+  transition: all 0.4s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  cursor: pointer;
 }
 
 .svlk-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 15px 30px rgba(37, 99, 235, 0.15);
-  background: linear-gradient(145deg, #eff6ff 0%, #dbeafe 100%);
+  transform: translateY(-8px) rotateX(4deg) rotateY(-3deg);
+  box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.12),
+    -8px -8px 18px rgba(255, 255, 255, 0.7);
+  background: linear-gradient(145deg, #e0f2fe, #ffffff);
 }
 
-/* ===== Icon & Text ===== */
 .svlk-icon {
-  font-size: 2.4rem;
-  display: block;
-  margin-bottom: 10px;
-  color: #2563eb;
-  filter: drop-shadow(0 3px 4px rgba(37, 99, 235, 0.25));
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #16a34a;
+  transform: translateZ(20px);
 }
 
 .svlk-card h3 {
   font-size: 1.2rem;
-  font-weight: 700;
-  color: #1e40af;
-  margin-bottom: 8px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.4rem;
+  transform: translateZ(15px);
 }
 
 .svlk-card p {
-  font-size: 0.95rem;
   color: #475569;
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.6;
+  transform: translateZ(10px);
 }
 
-/* ===== Closing Text ===== */
+/* ===== Penutup ===== */
 .svlk-closing {
-  font-size: 1rem;
-  color: #334155;
-  line-height: 1.7;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  color: #475569;
+  text-align: center;
+  line-height: 1.8;
 }
 
-.svlk-next {
-  font-size: 1rem;
-  color: #1d4ed8;
-  font-weight: 600;
+/* ===== Animasi (sama dengan Dokumen) ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
+/* ===== Responsif ===== */
+@media (max-width: 900px) {
   .svlk-container h2 {
     font-size: 1.8rem;
   }
 
-  .svlk-intro {
-    font-size: 1rem;
-  }
-
-  .svlk-card {
-    padding: 25px 20px;
+  .svlk-cards {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 }

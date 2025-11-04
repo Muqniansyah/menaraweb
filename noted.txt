@@ -16,10 +16,6 @@ Dalam perdagangan internasional, legalitas ekspor kayu menjadi faktor utama untu
 - tagline :
 #EKSPORKAYULEGAL
 
-
-
-
-
 3. buat web dan kompress gambar + alt gambar
 
 4. web responsif
@@ -33,9 +29,18 @@ https://menarabekasilestari.site/
 7. hosting web
 https://blogmenara.pages.dev/
 
-https://gitlab.com/menarablog/blogmenara
-untuk hosting ke gitlab pages harus melewati ci cd pipeline yang otomatis harus verifikasi terlebih dahulu.
-verifikasi dilakukan dengan nomer telepon dan kartu debit.
+https://github.com/Muqniansyah/menaraweb
+
+
+
+
+
+
+
+
+
+
+
 
 8. google analytics
 

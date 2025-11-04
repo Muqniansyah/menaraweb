@@ -1,92 +1,143 @@
-/* === FAQ Section === */
 .faq-section {
-  background: #f4f0ea; /* krem lembut */
-  color: #1a3d2f; /* hijau tua natural */
-  padding: 60px 20px;
-  border-top: 4px solid #166534;
-}
-
-.faq-title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 40px;
-  color: #124d33;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-.faq-container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.faq-item {
-  background: #ffffff;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  box-shadow: 0 2px 6px rgba(0, 50, 30, 0.1);
-  overflow: hidden;
-  transition: transform 0.2s ease;
-}
-
-.faq-item:hover {
-  transform: scale(1.01);
-}
-
-.faq-question {
-  width: 100%;
-  padding: 18px 24px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-align: left;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #166534;
+  background: linear-gradient(160deg, #fff7ed, #fef3c7);
+  padding: 100px 30px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
 
-.faq-icon {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #124d33;
-  transition: transform 0.3s ease;
+.faq-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #dc2626, #ea580c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
+.faq-container {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Setiap item FAQ */
+.faq-item {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  border: 1px solid rgba(234, 88, 12, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.35s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(234, 88, 12, 0.15);
+}
+
+/* Tombol pertanyaan */
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #7c2d12;
+  padding: 20px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq-icon {
+  font-size: 1.4rem;
+  color: #ea580c;
+  transition: transform 0.3s ease, color 0.3s ease;
+  transform: rotate(0deg);
+}
+
+/* Saat dibuka */
 .faq-item.active .faq-icon {
   transform: rotate(180deg);
-  content: "−";
+  color: #dc2626;
 }
 
+/* Jawaban tersembunyi */
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  background: #f9f8f6;
-  transition: max-height 0.4s ease;
-  padding: 0 24px;
-}
-
-.faq-item.active .faq-answer {
-  max-height: 200px;
-  padding: 18px 24px;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  opacity: 0;
+  padding: 0 25px;
 }
 
 .faq-answer p {
-  margin: 0;
+  color: #374151;
   line-height: 1.6;
-  color: #2a4d3a;
-  font-size: 1rem;
+  font-size: 0.98rem;
+  margin: 15px 0 20px;
+}
+
+/* Saat dibuka */
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+  color: #dc2626;
+}
+
+/* Efek hiasan latar belakang */
+.faq-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(234, 88, 12, 0.15), transparent 70%);
+  filter: blur(40px);
+  z-index: 0;
+}
+
+.faq-section::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(220, 38, 38, 0.15), transparent 70%);
+  filter: blur(60px);
+  z-index: 0;
 }
 
 /* Responsif */
-@media (max-width: 600px) {
-  .faq-title {
-    font-size: 1.5rem;
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 80px 20px;
   }
+
+  .faq-title {
+    font-size: 1.8rem;
+  }
+
   .faq-question {
     font-size: 1rem;
-    padding: 16px 18px;
+    padding: 16px 20px;
+  }
+
+  .faq-answer p {
+    font-size: 0.95rem;
   }
 }
