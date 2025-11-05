@@ -10,7 +10,6 @@
 
 .legalitas-container {
   max-width: 800px;
-  animation: fadeIn 0.8s ease-out;
 }
 
 .legalitas-container h2 {
@@ -77,18 +76,6 @@
 
 .next-link:hover {
   border-color: #2563eb;
-}
-
-/* ===== Animation ===== */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* ===== Responsif ===== */

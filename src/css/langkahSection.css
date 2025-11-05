@@ -130,3 +130,100 @@
     padding: 1.6rem 1rem;
   }
 }
+
+/* Tablet (≤768px) */
+@media (max-width: 768px) {
+  .langkah-section {
+    padding: 4rem 1rem;
+  }
+
+  .langkah-section h2 {
+    font-size: 1.7rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .langkah-intro {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+    padding: 0 0.5rem;
+  }
+
+  .langkah-steps {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+  }
+
+  .langkah-step {
+    padding: 1.6rem 1rem;
+    border-radius: 16px;
+  }
+
+  .step-icon {
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .langkah-cta {
+    margin-top: 3rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .langkah-cta h3 {
+    font-size: 1.4rem;
+  }
+
+  .langkah-cta p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile (≤450px) */
+@media (max-width: 450px) {
+  .langkah-section {
+    padding: 3rem 1rem;
+  }
+
+  .langkah-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .langkah-intro {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .langkah-steps {
+    grid-template-columns: 1fr; /* 1 kolom di layar kecil */
+    gap: 1rem;
+  }
+
+  .langkah-step {
+    padding: 1.2rem;
+    border-radius: 14px;
+  }
+
+  .step-icon {
+    font-size: 1.6rem;
+  }
+
+  .langkah-cta {
+    padding: 1.8rem 1.2rem;
+    margin-top: 2.5rem;
+  }
+
+  .langkah-cta h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .langkah-cta p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .cta-contact a {
+    font-size: 0.95rem;
+  }
+}

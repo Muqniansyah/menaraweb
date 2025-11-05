@@ -98,7 +98,7 @@
 }
 
 /* Efek hiasan latar belakang */
-.faq-section::before {
+/* .faq-section::before {
   content: "";
   position: absolute;
   top: 0;
@@ -120,7 +120,7 @@
   background: radial-gradient(circle, rgba(220, 38, 38, 0.15), transparent 70%);
   filter: blur(60px);
   z-index: 0;
-}
+} */
 
 /* Responsif */
 @media (max-width: 768px) {
@@ -139,5 +139,59 @@
 
   .faq-answer p {
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .faq-section {
+    padding: 60px 16px;
+  }
+
+  .faq-title {
+    font-size: 1.5rem;
+    margin-bottom: 35px;
+    line-height: 1.3;
+  }
+
+  .faq-container {
+    gap: 14px;
+  }
+
+  .faq-item {
+    border-radius: 14px;
+  }
+
+  .faq-question {
+    font-size: 0.95rem;
+    padding: 14px 16px;
+  }
+
+  .faq-icon {
+    font-size: 1.2rem;
+  }
+
+  .faq-answer {
+    padding: 0 16px;
+  }
+
+  .faq-answer p {
+    font-size: 0.9rem;
+    margin: 12px 0 16px;
+    line-height: 1.5;
+  }
+
+  /* Hiasan background disesuaikan agar tidak keluar layar */
+  .faq-section::before {
+    width: 150px;
+    height: 150px;
+    left: -30px;
+    top: 10px;
+  }
+
+  .faq-section::after {
+    width: 180px;
+    height: 180px;
+    right: -30px;
+    bottom: -30px;
   }
 }

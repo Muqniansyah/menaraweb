@@ -27,20 +27,9 @@ https://wa.me/6285817298071
 https://menarabekasilestari.site/
 
 7. hosting web
-https://blogmenara.pages.dev/
+https://menaraweb.vercel.app/
 
 https://github.com/Muqniansyah/menaraweb
-
-
-
-
-
-
-
-
-
-
-
 
 8. google analytics
 
@@ -51,10 +40,10 @@ https://github.com/Muqniansyah/menaraweb
 11. buat file sitemap.xml dan robots.txt
 
 12. uji url sudah aktif
-https://blogmenara.pages.dev/
+https://menaraweb.vercel.app/
 
 13. uji url sitemap sudah aktif
-https://blogmenara.pages.dev/sitemap.xml
+https://menaraweb.vercel.app/sitemap.xml
 
 14. membuat swiper atau carousel slide untuk backlink seo
 
@@ -62,4 +51,4 @@ https://blogmenara.pages.dev/sitemap.xml
 
 16. menambah headers keamanan
 
-17. lakukan minify file (default dari cloudflare)
+17. lakukan minify file (belum)

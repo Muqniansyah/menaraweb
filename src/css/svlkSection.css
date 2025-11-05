@@ -41,7 +41,6 @@
   width: 100%;
   position: relative;
   z-index: 2;
-  animation: fadeIn 0.8s ease-out;
 }
 
 /* ===== Judul & Intro ===== */
@@ -120,18 +119,6 @@
   line-height: 1.8;
 }
 
-/* ===== Animasi (sama dengan Dokumen) ===== */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* ===== Responsif ===== */
 @media (max-width: 900px) {
   .svlk-container h2 {
@@ -140,5 +127,85 @@
 
   .svlk-cards {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+/* Tablet (≤768px) */
+@media (max-width: 768px) {
+  .svlk-section {
+    padding: 4rem 1rem;
+  }
+
+  .svlk-container h2 {
+    font-size: 1.9rem;
+  }
+
+  .svlk-intro {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+  }
+
+  .svlk-cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.2rem;
+  }
+
+  .svlk-card {
+    padding: 1.2rem;
+  }
+
+  .svlk-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .svlk-card p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile (≤450px) */
+@media (max-width: 450px) {
+  .svlk-section {
+    padding: 3rem 1rem;
+  }
+
+  .svlk-container h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .svlk-intro {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  .svlk-cards {
+    grid-template-columns: 1fr; /* tampil 1 kolom */
+    gap: 1rem;
+  }
+
+  .svlk-card {
+    padding: 1rem;
+    border-radius: 14px;
+  }
+
+  .svlk-icon {
+    font-size: 1.6rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .svlk-card h3 {
+    font-size: 1rem;
+  }
+
+  .svlk-card p {
+    font-size: 0.9rem;
+  }
+
+  .svlk-closing {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
   }
 }

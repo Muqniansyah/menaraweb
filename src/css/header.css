@@ -73,9 +73,10 @@
   transform: translateY(-2px);
 }
 
-/* ===== Responsif (mobile) ===== */
+/* ===== Responsif (Tablet ≤768px) ===== */
 @media (max-width: 768px) {
   .hero-full {
+    min-height: 140vh;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
@@ -89,5 +90,67 @@
 
   .hero-text h1 {
     font-size: 1.8rem;
+  }
+}
+
+/* ===== Responsif (Mobile ≤450px) ===== */
+@media (max-width: 450px) {
+  .hero-full {
+    min-height: 150vh;
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .hero-image-vertical img {
+    width: 200px;
+    height: 300px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    padding: 0.8rem 1.4rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* ===== Responsif (Desktop besar ≥1366px) ===== */
+@media (min-width: 1366px) {
+  .hero-full {
+    gap: 6rem;
+    padding: 3rem 6rem;
+  }
+
+  .hero-image-vertical img {
+    width: 400px;
+    height: 600px;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .cta-btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
   }
 }

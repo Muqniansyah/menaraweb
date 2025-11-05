@@ -60,6 +60,69 @@ export default function BlogPage() {
       {/* ===== Swiper Section ===== */}
       <SwiperSection />
 
+      {/* ✅ Website Schema (JSON-LD) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: `
+                  {
+                    "@context": "https://schema.org",
+                    "@type": "WebSite",
+                    "name": "Menara Bekasi",
+                    "url": "https://menaraweb.vercel.app/",
+                    "description": "Panduan lengkap legalitas ekspor kayu, dokumen, perizinan, dan sertifikasi SVLK.",
+                    "publisher": {
+                      "@type": "Organization",
+                      "name": "PT Menara Bekasi",
+                      "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://menaraweb.vercel.app/images/logo.png"
+                      }
+                    }
+                  }
+                  `,
+        }}
+      />
+
+      {/* ✅ FAQ Schema (JSON-LD) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: `
+                    {
+                      "@context": "https://schema.org",
+                      "@type": "FAQPage",
+                      "mainEntity": [
+                        {
+                          "@type": "Question",
+                          "name": "Apa itu SVLK?",
+                          "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "SVLK adalah Sistem Verifikasi Legalitas Kayu yang memastikan kayu berasal dari sumber legal dan dikelola secara lestari."
+                          }
+                        },
+                        {
+                          "@type": "Question",
+                          "name": "Mengapa SVLK penting dalam ekspor kayu?",
+                          "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Karena SVLK merupakan syarat legalitas wajib agar kayu dapat diterima di pasar internasional, termasuk Uni Eropa."
+                          }
+                        },
+                        {
+                          "@type": "Question",
+                          "name": "Apa dokumen dasar untuk ekspor kayu?",
+                          "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Minimal harus memiliki NIB, RIPH bila diperlukan, dokumen penjualan, sertifikat SVLK, dan PEB melalui sistem INSW."
+                          }
+                        }
+                      ]
+                    }
+                    `,
+        }}
+      />
+
       {/* ===== Footer ===== */}
       <footer className="site-footer">
         <div className="footer-container">
