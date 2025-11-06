@@ -94,9 +94,9 @@
 }
 
 /* ===== Responsif (Mobile ≤450px) ===== */
-@media (max-width: 350px) {
+@media (max-width: 450px) {
   .hero-full {
-    min-height: 140vh;
+    min-height: 95vh;
     flex-direction: column;
     padding: 1.5rem 1rem;
     gap: 1.5rem;
@@ -126,6 +126,12 @@
   .cta-btn {
     padding: 0.8rem 1.4rem;
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .hero-full {
+    min-height: 140vh;
   }
 }
 
