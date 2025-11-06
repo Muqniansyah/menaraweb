@@ -95,26 +95,34 @@ export default function BlogPage() {
                       "mainEntity": [
                         {
                           "@type": "Question",
-                          "name": "Apa itu SVLK?",
+                          "name": "Apa yang dimaksud dengan legalitas ekspor kayu?",
                           "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "SVLK adalah Sistem Verifikasi Legalitas Kayu yang memastikan kayu berasal dari sumber legal dan dikelola secara lestari."
+                            "text": "Legalitas ekspor kayu adalah pembuktian bahwa produk kayu yang diekspor berasal dari sumber yang sah dan terverifikasi. Ini memastikan bahwa proses produksinya mematuhi hukum dan tidak berasal dari pembalakan liar."
                           }
                         },
                         {
                           "@type": "Question",
-                          "name": "Mengapa SVLK penting dalam ekspor kayu?",
+                          "name": "Dokumen apa saja yang wajib disiapkan untuk ekspor kayu?",
                           "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Karena SVLK merupakan syarat legalitas wajib agar kayu dapat diterima di pasar internasional, termasuk Uni Eropa."
+                            "text": "Beberapa dokumen wajib antara lain: Invoice, Packing List, Surat Keterangan Asal (SKA), Dokumen SVLK, Pemberitahuan Ekspor Barang (PEB), serta Sertifikat Fumigasi jika diperlukan."
                           }
                         },
                         {
                           "@type": "Question",
-                          "name": "Apa dokumen dasar untuk ekspor kayu?",
+                          "name": "Apa itu sertifikat SVLK dan mengapa penting?",
                           "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "Minimal harus memiliki NIB, RIPH bila diperlukan, dokumen penjualan, sertifikat SVLK, dan PEB melalui sistem INSW."
+                            "text": "SVLK (Sistem Verifikasi Legalitas Kayu) menjamin bahwa kayu berasal dari sumber yang legal. Sertifikat ini diakui secara internasional, termasuk oleh Uni Eropa melalui lisensi FLEGT."
+                          }
+                        },
+                        {
+                          "@type": "Question",
+                          "name": "Bagaimana langkah-langkah mengurus legalitas ekspor kayu?",
+                          "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Mulai dari memastikan izin bahan baku dari KLHK, mendaftarkan perusahaan di OSS, mengurus sertifikasi SVLK, melengkapi dokumen ekspor, hingga memastikan pengiriman sesuai standar internasional."
                           }
                         }
                       ]
