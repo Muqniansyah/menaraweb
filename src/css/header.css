@@ -94,9 +94,9 @@
 }
 
 /* ===== Responsif (Mobile ≤450px) ===== */
-@media (max-width: 450px) {
+@media (max-width: 350px) {
   .hero-full {
-    min-height: 95vh;
+    min-height: 140vh;
     flex-direction: column;
     padding: 1.5rem 1rem;
     gap: 1.5rem;
