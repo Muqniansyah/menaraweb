@@ -58,10 +58,7 @@ export default function SwiperSection() {
               alt="Pastikan Pallet Anda Siap Kirim Tanpa Risiko!"
             />
             <h3>Pastikan Pallet Anda Siap Kirim Tanpa Risiko!</h3>
-            <p>
-              Pastikan Pallet Anda Siap Kirim Tanpa Risiko! Kerjasama hanya
-              dengan vendor terpercaya & berpengalaman.
-            </p>
+            <p>Kerjasama hanya dengan vendor terpercaya & berpengalaman.</p>
             <a
               href="https://kemaskayuindonesia.my.id/menarabekasi/"
               target="_blank"
@@ -76,21 +73,84 @@ export default function SwiperSection() {
         <SwiperSlide>
           <article className="swiper-card">
             <img
-              src="/images/slider/kemaskayu.png"
-              alt="Ekspor bisa ditolak hanya karena kemasan kayu tidak sesuai standar
-              ISPM #15!"
+              src="/images/slider/web-9.jpg"
+              alt="Pembuatan Pallet Kayu Ekspor: Proses dan Standar ISPM 15"
             />
-            <h3>
-              Ekspor bisa ditolak hanya karena kemasan kayu tidak sesuai standar
-              ISPM #15!
-            </h3>
+            <h3>Pembuatan Pallet Kayu Ekspor: Proses dan Standar ISPM 15</h3>
             <p>
-              Ekspor bisa ditolak hanya karena kemasan kayu tidak sesuai standar
-              ISPM #15! Pastikan kemasan kayu Anda sudah sesuai aturan
-              internasional agar ekspor tidak bermasalah.
+              Lihat bagaimana proses pengolahan kayu menjadi pallet ekspor yang
+              memenuhi regulasi.
             </p>
             <a
-              href="https://kemaskayuindonesia.my.id/"
+              href="https://blogwebmenara.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="read-more"
+            >
+              Lihat Selengkapnya →
+            </a>
+          </article>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <article className="swiper-card">
+            <img
+              src="/images/slider/web-7.jpeg"
+              alt="Langkah Cerdas Melakukan Riset Vendor Sebelum Kerjasama Bisnis"
+            />
+            <h3>
+              Langkah Cerdas Melakukan Riset Vendor Sebelum Kerjasama Bisnis
+            </h3>
+            <p>
+              Pelajari strategi menilai kredibilitas vendor sebelum menjalin
+              kontrak kerja sama.
+            </p>
+            <a
+              href="https://webmenara.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="read-more"
+            >
+              Lihat Selengkapnya →
+            </a>
+          </article>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <article className="swiper-card">
+            <img
+              src="/images/slider/web-12.jpg"
+              alt="Inovasi Teknologi dalam Industri Kayu Ekspor Modern"
+            />
+            <h3>Inovasi Teknologi dalam Industri Kayu Ekspor Modern</h3>
+            <p>
+              Temukan teknologi terbaru dalam pengolahan kayu dan sistem smart
+              treatment ISPM 15.
+            </p>
+            <a
+              href="https://menara-bekasiweb.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="read-more"
+            >
+              Lihat Selengkapnya →
+            </a>
+          </article>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <article className="swiper-card">
+            <img
+              src="/images/slider/web-4.jpg"
+              alt="Perbedaan Kayu ISPM 15 dan Non ISPM 15 untuk Ekspor"
+            />
+            <h3>Perbedaan Kayu ISPM 15 dan Non ISPM 15 untuk Ekspor</h3>
+            <p>
+              Pahami perbedaan penting antara kayu bersertifikat dan
+              non-sertifikat sebelum ekspor.
+            </p>
+            <a
+              href="https://blogmenara.pages.dev/"
               target="_blank"
               rel="noopener noreferrer"
               className="read-more"
