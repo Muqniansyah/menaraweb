@@ -22,6 +22,9 @@ export const metadata = {
   icons: {
     icon: "/images/logo.png",
   },
+  alternates: {
+    canonical: "https://menaraweb.vercel.app/",
+  },
   link: [
     {
       rel: "stylesheet",
@@ -31,6 +34,7 @@ export const metadata = {
   verification: {
     google: "vmcHQ8G9ervQgGmZyGjt12V4MyZwzSjyipkAnykNCIM", // ✅ GSC
   },
+  authors: [{ name: "PT Menara Bekasi" }],
 };
 
 // Root Layout — struktur dasar semua halaman.

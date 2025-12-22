@@ -2,7 +2,7 @@ export default function sitemap() {
   return [
     {
       url: "https://menaraweb.vercel.app/",
-      lastModified: new Date().toISOString(),
+      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1.0,
     },
